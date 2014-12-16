@@ -10,5 +10,4 @@ RUN pip install RPi.Gpio
 
 ADD gpio_example.py /App/
 
-RUN echo 'python /App/gpio_example.py && tail -f /App/gpio.log' > /start
-RUN chmod +x /start
+CMD ["python", "/App/gpio_example.py"]
