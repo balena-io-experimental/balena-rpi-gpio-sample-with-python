@@ -1,0 +1,14 @@
+FROM resin/%%RESIN_MACHINE_NAME%%:wheezy
+
+WORKDIR /usr/src/app
+ENV INITSYSTEM on
+
+RUN apt-get update \
+	&& apt-get install -yq --no-install-recommends python wget build-essential python-dev python-pip
+	&& apt-get clean && rm -rf /var/lib/apt/lists*
+
+RUN pip install RPi.Gpio
+
+COPY gpio_example.py .
+
+CMD ["python", ".gpio_example.py"]

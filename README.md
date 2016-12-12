@@ -9,9 +9,9 @@ Set B: 16.18,19,21,22,23,24,26 (pin number)
 In this example, the LEDs on two sets will be switched between on and off after one sec. If set A is on then set B is off and vice versa.
 
 All you need to do is :
-
-* clone this repo locally  and cd into the folder.
-* connect some LEDs to two pin sets
-* add the resin remote repo with `git remote add resin git@git.resin.io:myGithubName/myResinAppName.git` , with the correct github and app name, or just copy if from the top right hand corner of your device dashboard on resin.io.
-* now just `git push resin master` wait a minute or so for the code to upload and start.
-* enjoy the all the LED goodness...
+* Create a new application on the [resin dashboard](https://dashboard.resin.io) (more information: [Getting Started](https://docs.resin.io/raspberrypi3/python/getting-started/))
+* Clone this repo: `git clone https://github.com/resin-io-projects/resin-rpi-gpio-sample-with-python.git`
+* Connect LEDs to both sets of pins
+* Copy the git command from the top right of the resin dashboard application, the one starting `git remote add ...` and run it in the cloned repository
+* Run `git push resin master` and let the code compile and synchronise with your connected devices
+* Enjoy your resinified LEDs!
