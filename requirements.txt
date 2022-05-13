@@ -1,2 +1,2 @@
-RPi.Gpio==0.6.5
+RPi.Gpio==0.7.1
 
